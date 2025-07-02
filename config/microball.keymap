@@ -68,7 +68,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E         &kp R                        &kp T                                                          &kp Y        &kp U  &kp I            &kp O                    &kp MINUS
-&kp A             &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))                      &kp BACKSLASH  &kp H        &kp J  &kp K            &kp L                    &kp P
+&kp A             &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))                      &mkp MB2       &kp H        &kp J  &kp K            &kp L                    &kp P
 &mt LEFT_SHIFT Z  &kp X         &mt LCTRL C   &mt LEFT_ALT V               &kp B        &kp LC(SPACE)                      &kp SLASH      &kp B        &kp N  &mt RIGHT_ALT M  &mt RIGHT_CONTROL COMMA  &mt RIGHT_SHIFT PERIOD
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 5 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                                                   &lt 6 DEL
             >;
@@ -78,26 +78,26 @@
 
         FUNCTION {
             bindings = <
-&kp APOS              &kp TILDE        &kp TILDE          &kp INTERNATIONAL_3  &kp NON_US_BACKSLASH                      &trans     &trans     &trans         &trans  &trans
-&kp COLON             &kp SEMICOLON    &kp RIGHT_BRACKET  &kp AT               &kp LEFT_BRACKET      &trans      &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)      &trans  &trans
-&mt LEFT_SHIFT GRAVE  &kp NON_US_BSLH  &kp BACKSLASH      &kp DOUBLE_QUOTES    &kp AMPERSAND         &trans      &trans  &trans     &kp LC(A)  &kp LS(LC(L))  &trans  &trans
-&trans                &trans           &trans             &trans               &trans                &trans      &trans  &trans                                       &trans
+&kp ESCAPE            &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &trans            &kp NON_US_BACKSLASH                      &kp LC(F)  &kp LC(H)  &trans         &trans  &kp TILDE
+&kp COLON             &kp SEMICOLON     &kp AT_SIGN        &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &trans      &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)      &trans  &trans
+&mt LEFT_SHIFT GRAVE  &trans            &trans             &trans            &trans                &trans      &trans  &trans     &kp LC(A)  &kp LS(LC(L))  &trans  &trans
+&trans                &trans            &trans             &trans            &trans                &trans      &trans  &trans                                       &trans
             >;
         };
 
         NUM {
             bindings = <
-&kp NUMBER_1       &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                             &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0
-&mt LEFT_SHIFT F1  &kp F2        &kp F3        &kp F4        &kp F5   &kp F6       &kp INT_YEN  &kp ASTERISK  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
-&mt LEFT_SHIFT F7  &kp F8        &kp F9        &kp F10       &kp F11  &kp F12      &kp PERIOD   &kp N0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL
-&trans             &trans        &trans        &trans        &trans   &trans       &trans       &trans                                                  &trans
+&kp NUMBER_1       &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                               &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0
+&mt LEFT_SHIFT F1  &kp F2        &kp F3        &kp F4        &kp F5   &kp F6       &kp BACKSLASH  &kp ASTERISK  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
+&mt LEFT_SHIFT F7  &kp F8        &kp F9        &kp F10       &kp F11  &kp F12      &kp PERIOD     &kp N0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL
+&trans             &trans        &trans        &trans        &trans   &trans       &trans         &trans                                                  &trans
             >;
         };
 
         ARROW {
             bindings = <
 &kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &kp C_MUTE                           &trans  &trans          &kp UP_ARROW    &trans        &trans
-&trans          &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp C_VOLUME_UP  &trans      &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT     &mt RIGHT_CONTROL HOME
+&kp LEFT_SHIFT  &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp C_VOLUME_UP  &trans      &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT     &mt RIGHT_CONTROL HOME
 &kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &kp C_VOL_DN     &trans      &trans  &trans  &kp PAGE_UP     &kp PAGE_DOWN   &kp LEFT_WIN  &mt RIGHT_SHIFT END
 &trans          &trans                  &trans          &trans                   &trans           &trans      &trans  &trans                                                &trans
             >;
